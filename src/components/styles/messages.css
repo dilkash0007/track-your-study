@@ -1,0 +1,192 @@
+/* Messages Content */
+.messages-content {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-radius: 20px;
+    padding: 24px;
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.1),
+        0 1px 2px rgba(0, 0, 0, 0.05),
+        inset 0 0 0 1px rgba(255, 255, 255, 0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+.messages-content::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+}
+
+.messages-content h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #fff;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+}
+
+.messages-content h2::before {
+    content: '💬';
+    margin-right: 12px;
+    font-size: 24px;
+}
+
+.messages-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.message-item {
+    display: flex;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 16px;
+    padding: 16px;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    position: relative;
+    overflow: hidden;
+}
+
+.message-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+}
+
+.message-item:hover {
+    transform: translateY(-5px) scale(1.02);
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.message-avatar {
+    font-size: 28px;
+    margin-right: 16px;
+    background: rgba(255, 255, 255, 0.1);
+    width: 50px;
+    height: 50px;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.message-content {
+    flex-grow: 1;
+}
+
+.message-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+
+.message-sender {
+    font-weight: 600;
+    color: #fff;
+}
+
+.message-time {
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.5);
+    background: rgba(255, 255, 255, 0.05);
+    padding: 2px 8px;
+    border-radius: 10px;
+}
+
+.message-text {
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.5;
+}
+
+/* Message Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.message-item {
+    animation: fadeInUp 0.4s ease forwards;
+    opacity: 0;
+}
+
+.message-item:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.message-item:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.message-item:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+.message-item:nth-child(4) {
+    animation-delay: 0.4s;
+}
+
+.message-item:nth-child(5) {
+    animation-delay: 0.5s;
+}
+
+/* Unread Message Indicator */
+.message-item.unread::after {
+    content: '';
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    width: 10px;
+    height: 10px;
+    background: #00c6ff;
+    border-radius: 50%;
+    box-shadow: 0 0 10px #00c6ff;
+}
+
+/* Mobile Responsive */
+@media (max-width: 576px) {
+    .message-item {
+        flex-direction: column;
+    }
+
+    .message-avatar {
+        margin-right: 0;
+        margin-bottom: 12px;
+        align-self: center;
+    }
+
+    .message-header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .message-time {
+        margin-top: 8px;
+    }
+
+    .message-text {
+        text-align: center;
+    }
+}
