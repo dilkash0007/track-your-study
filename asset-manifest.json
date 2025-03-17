@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/dilkash0007/track-your-study.git/static/css/main.a9826949.css",
+    "main.js": "/dilkash0007/track-your-study.git/static/js/main.ecd41781.js",
+    "static/js/453.ffb9cfb3.chunk.js": "/dilkash0007/track-your-study.git/static/js/453.ffb9cfb3.chunk.js",
+    "index.html": "/dilkash0007/track-your-study.git/index.html",
+    "main.a9826949.css.map": "/dilkash0007/track-your-study.git/static/css/main.a9826949.css.map",
+    "main.ecd41781.js.map": "/dilkash0007/track-your-study.git/static/js/main.ecd41781.js.map",
+    "453.ffb9cfb3.chunk.js.map": "/dilkash0007/track-your-study.git/static/js/453.ffb9cfb3.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a9826949.css",
+    "static/js/main.ecd41781.js"
+  ]
+}
