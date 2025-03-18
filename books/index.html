@@ -4,67 +4,122 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Books Directory</title>
+    <title>Books Directory - Track Your Study</title>
     <style>
         body {
-            font-family: system-ui, -apple-system, sans-serif;
-            max-width: 800px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f9fa;
+            max-width: 1000px;
             margin: 0 auto;
             padding: 2rem;
-            color: #333;
         }
 
         h1 {
-            color: #1a56db;
+            color: #2563eb;
         }
 
-        ul {
-            list-style-type: none;
-            padding: 0;
+        .books-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1.5rem;
         }
 
-        li {
-            padding: 0.5rem 0;
-            border-bottom: 1px solid #eee;
+        .book-item {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.2s, box-shadow 0.2s;
         }
 
-        a {
-            color: #3b82f6;
+        .book-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .book-item a {
+            display: block;
+            padding: 1rem;
+            color: #1e3a8a;
             text-decoration: none;
+            font-weight: 500;
         }
 
-        a:hover {
-            text-decoration: underline;
+        .book-info {
+            padding: 0 1rem 1rem;
+            font-size: 0.875rem;
+            color: #6b7280;
+        }
+
+        .pdf-icon {
+            color: #ef4444;
+            margin-right: 0.5rem;
+            font-weight: bold;
         }
     </style>
 </head>
 
 <body>
-    <h1>Track Your Study - Books</h1>
-    <p>This directory contains PDF files for the Books feature.</p>
+    <h1>Study Books Directory</h1>
+    <p>This directory contains PDF books for your study needs. Click on any file to view it.</p>
 
-    <ul>
-        <li><a
-                href="Personal%20Jokes%20in%20Aristophanes%20FS%20Halliwell%2C%20Worcester%20College%20D%20Phil%20The%20material%20of%20this%20thesis%20-%20PDF%20Room.pdf">Personal
-                Jokes in Aristophanes</a></li>
-        <li><a
-                href="Yo%20Mama%20Jokes%20EncyclopediaThe%20Worlds%20Funniest%20Yo%20Momma%20Jokes!%20-%20PDF%20Room.pdf">Yo
-                Mama Jokes Encyclopedia</a></li>
-        <li><a href="The%20Funniest%20Five%20Thousand%20Jokes%20-%20PDF%20Room.pdf">The Funniest Five Thousand Jokes</a>
-        </li>
-        <li><a
-                href="The%20Ginormous%20Book%20of%20Dirty%20Jokes_%20Over%201%2C000%20Sick%2C%20Filthy%20and%20X-Rated%20Jokes%20-%20PDF%20Room.pdf">The
-                Ginormous Book of Dirty Jokes</a></li>
-        <li><a
-                href="The%20Best%20Joke%20Book%20Period_%20Hundreds%20of%20the%20Funniest%2C%20Silliest%2C%20Most%20Ridiculous%20Jokes%20Ever%20-%20PDF%20Room.pdf">The
-                Best Joke Book Period</a></li>
-        <li><a
-                href="The%20Serious%20Guide%20to%20Joke%20Writing_%20How%20To%20Say%20Something%20Funny%20About%20Anything%20-%20PDF%20Room.pdf">The
-                Serious Guide to Joke Writing</a></li>
-        <li><a href="Batman_%20The%20Killing%20Joke%20-%20PDF%20Room.pdf">Batman: The Killing Joke</a></li>
-        <li><a href="Manga%20Comics_%20the-breaker-new-waves-4%20-%20PDF%20Room.pdf">Manga Comics: The Breaker New
-                Waves</a></li>
-    </ul>
+    <div class="books-container" id="books-list">
+        <!-- Books will be populated dynamically by JavaScript -->
+    </div>
+
+    <script>
+        // Simple script to list PDF files
+        window.addEventListener('DOMContentLoaded', () => {
+            const booksList = document.getElementById('books-list');
+
+            // Fetch the current directory
+            fetch('./')
+                .then(response => response.text())
+                .then(html => {
+                    const parser = new DOMParser();
+                    const doc = parser.parseFromString(html, 'text/html');
+                    const links = Array.from(doc.querySelectorAll('a'));
+
+                    // Filter to just show PDF files
+                    const pdfLinks = links.filter(link => {
+                        const href = link.getAttribute('href');
+                        return href && href.toLowerCase().endsWith('.pdf');
+                    });
+
+                    if (pdfLinks.length === 0) {
+                        booksList.innerHTML = '<p>No PDF books found in this directory.</p>';
+                        return;
+                    }
+
+                    // Create elements for each PDF
+                    pdfLinks.forEach(link => {
+                        const filename = link.textContent;
+                        if (filename === 'Parent Directory') return;
+
+                        const bookItem = document.createElement('div');
+                        bookItem.className = 'book-item';
+
+                        const bookLink = document.createElement('a');
+                        bookLink.href = link.href;
+                        bookLink.innerHTML = `<span class="pdf-icon">PDF</span> ${filename}`;
+
+                        const bookInfo = document.createElement('div');
+                        bookInfo.className = 'book-info';
+                        bookInfo.textContent = 'Click to view or download';
+
+                        bookItem.appendChild(bookLink);
+                        bookItem.appendChild(bookInfo);
+                        booksList.appendChild(bookItem);
+                    });
+                })
+                .catch(error => {
+                    console.error('Error loading directory:', error);
+                    booksList.innerHTML = `<p>Error loading books: ${error.message}</p>`;
+                });
+        });
+    </script>
 </body>
 
 </html>

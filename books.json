@@ -1,0 +1,47 @@
+[
+  {
+    "id": "simple-test",
+    "title": "Simple Test PDF",
+    "filename": "Simple_Test.pdf",
+    "author": "Track Your Study Team",
+    "description": "A simple test PDF file",
+    "category": "Test",
+    "addedDate": "2023-09-30"
+  },
+  {
+    "id": "test-thumbnail",
+    "title": "Test Thumbnail PDF",
+    "filename": "test_thumbnail.pdf",
+    "author": "Track Your Study Team",
+    "description": "A test PDF for thumbnail generation",
+    "category": "Test",
+    "addedDate": "2023-09-30"
+  },
+  {
+    "id": "personal-jokes",
+    "title": "Personal Jokes in Aristophanes",
+    "filename": "Personal Jokes in Aristophanes FS Halliwell, Worcester College D Phil The material of this thesis - PDF Room.pdf",
+    "author": "FS Halliwell, Worcester College",
+    "description": "A thesis on Personal Jokes in Aristophanes",
+    "category": "Academic",
+    "addedDate": "2023-09-30"
+  },
+  {
+    "id": "yo-mama-jokes",
+    "title": "Yo Mama Jokes Encyclopedia",
+    "filename": "Yo Mama Jokes EncyclopediaThe Worlds Funniest Yo Momma Jokes! - PDF Room.pdf",
+    "author": "PDF Room",
+    "description": "The Worlds Funniest Yo Momma Jokes!",
+    "category": "Humor",
+    "addedDate": "2023-09-30"
+  },
+  {
+    "id": "batman-killing-joke",
+    "title": "Batman: The Killing Joke",
+    "filename": "Batman_ The Killing Joke - PDF Room.pdf",
+    "author": "DC Comics",
+    "description": "A famous Batman graphic novel",
+    "category": "Comics",
+    "addedDate": "2023-09-30"
+  }
+]
