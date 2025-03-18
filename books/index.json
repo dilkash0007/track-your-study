@@ -1,0 +1,68 @@
+[
+  {
+    "id": "placeholder-info",
+    "title": "Books Feature Information",
+    "filename": "sample.html",
+    "author": "Track Your Study Team",
+    "coverImage": "placeholder-cover.jpg",
+    "description": "Information about how to add PDF books to this application",
+    "category": "Information",
+    "tags": ["info", "help", "documentation"],
+    "addedDate": "2023-09-30"
+  },
+  {
+    "id": "book-1",
+    "title": "Learning JavaScript",
+    "filename": "learning-javascript.pdf",
+    "author": "John Smith",
+    "coverImage": "learning-javascript-cover.jpg",
+    "description": "A comprehensive guide to modern JavaScript programming",
+    "category": "Programming",
+    "tags": ["javascript", "programming", "web development"],
+    "addedDate": "2023-05-15"
+  },
+  {
+    "id": "book-2",
+    "title": "Web Design Fundamentals",
+    "filename": "web-design-fundamentals.pdf",
+    "author": "Sarah Johnson",
+    "coverImage": "web-design-cover.jpg",
+    "description": "Learn the essential principles of effective web design",
+    "category": "Design",
+    "tags": ["design", "ui/ux", "web development"],
+    "addedDate": "2023-06-22"
+  },
+  {
+    "id": "book-3",
+    "title": "Python Data Science Handbook",
+    "filename": "python-data-science.pdf",
+    "author": "Michael Chen",
+    "coverImage": "python-ds-cover.jpg",
+    "description": "Master data analysis and visualization with Python",
+    "category": "Data Science",
+    "tags": ["python", "data science", "machine learning"],
+    "addedDate": "2023-07-10"
+  },
+  {
+    "id": "book-4",
+    "title": "Modern React Development",
+    "filename": "modern-react.pdf",
+    "author": "Emily Rodriguez",
+    "coverImage": "react-cover.jpg",
+    "description": "Build powerful web applications with React and its ecosystem",
+    "category": "Programming",
+    "tags": ["react", "javascript", "web development"],
+    "addedDate": "2023-08-05"
+  },
+  {
+    "id": "book-5",
+    "title": "Calculus Made Simple",
+    "filename": "calculus-simple.pdf",
+    "author": "David Wilson",
+    "coverImage": "calculus-cover.jpg",
+    "description": "A student-friendly approach to calculus fundamentals",
+    "category": "Mathematics",
+    "tags": ["calculus", "math", "education"],
+    "addedDate": "2023-09-18"
+  }
+]

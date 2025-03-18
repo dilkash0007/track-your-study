@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Track Your Study - PDF Books Info</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        h1 {
+            color: #1a56db;
+            border-bottom: 2px solid #e5e7eb;
+            padding-bottom: 0.5rem;
+        }
+
+        h2 {
+            color: #2563eb;
+            margin-top: 2rem;
+        }
+
+        .info-box {
+            background-color: #f3f4f6;
+            border-left: 4px solid #3b82f6;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 0.25rem;
+        }
+
+        code {
+            background-color: #e5e7eb;
+            padding: 0.25rem 0.5rem;
+            border-radius: 0.25rem;
+            font-family: monospace;
+        }
+
+        .file-list {
+            background-color: #f3f4f6;
+            padding: 1rem;
+            border-radius: 0.25rem;
+            font-family: monospace;
+        }
+
+        .highlight {
+            color: #1d4ed8;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Track Your Study - PDF Books</h1>
+
+    <div class="info-box">
+        This is a placeholder page. To use the Books feature with pre-loaded PDFs, you'll need to add actual PDF files.
+    </div>
+
+    <h2>How to Add PDF Books</h2>
+    <p>
+        To add pre-loaded PDF books to your application:
+    </p>
+
+    <ol>
+        <li>Place PDF files in the <code>/public/books/</code> directory</li>
+        <li>Make sure the filenames match those referenced in <code>index.json</code></li>
+        <li>Alternatively, update the <code>index.json</code> file to match your actual PDF filenames</li>
+    </ol>
+
+    <h2>Expected Files</h2>
+    <p>According to <code>index.json</code>, the system is looking for these files:</p>
+
+    <div class="file-list">
+        ├── learning-javascript.pdf<br>
+        ├── web-design-fundamentals.pdf<br>
+        ├── python-data-science.pdf<br>
+        ├── modern-react.pdf<br>
+        └── calculus-simple.pdf
+    </div>
+
+    <h2>User-Uploaded PDFs</h2>
+    <p>
+        In addition to pre-loaded PDFs, users can upload their own PDF files. These files are:
+    </p>
+    <ul>
+        <li>Stored in the browser's <span class="highlight">localStorage</span></li>
+        <li>Combined with pre-loaded PDFs in the book list</li>
+        <li>Preserved between sessions on the same device</li>
+    </ul>
+
+    <h2>Troubleshooting</h2>
+    <p>
+        If you encounter issues with PDF loading:
+    </p>
+    <ul>
+        <li>Ensure the PDF files are valid and not corrupted</li>
+        <li>Check that filenames match exactly what's specified in <code>index.json</code></li>
+        <li>Verify the PDFs are placed in the correct directory (<code>/public/books/</code>)</li>
+        <li>Check browser console for any JavaScript errors</li>
+    </ul>
+</body>
+
+</html>
