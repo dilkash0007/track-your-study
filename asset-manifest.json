@@ -1,11 +1,14 @@
 {
   "files": {
-    "main.css": "/track-your-study/static/css/main.ed1c2e5c.css",
-    "main.js": "/track-your-study/static/js/main.6b99c7a6.js",
-    "static/js/993.4f4d87b1.chunk.js": "/track-your-study/static/js/993.4f4d87b1.chunk.js",
+    "main.css": "/track-your-study/static/css/main.e00ba576.css",
+    "main.js": "/track-your-study/static/js/main.b0fe0463.js",
+    "static/js/722.84c104ea.chunk.js": "/track-your-study/static/js/722.84c104ea.chunk.js",
+    "static/js/205.69d9c173.chunk.js": "/track-your-study/static/js/205.69d9c173.chunk.js",
+    "static/js/209.9cc5a013.chunk.js": "/track-your-study/static/js/209.9cc5a013.chunk.js",
+    "static/js/993.6a4e676c.chunk.js": "/track-your-study/static/js/993.6a4e676c.chunk.js",
     "static/js/948.ccd2d8c1.chunk.js": "/track-your-study/static/js/948.ccd2d8c1.chunk.js",
     "static/js/531.245e4100.chunk.js": "/track-your-study/static/js/531.245e4100.chunk.js",
-    "static/js/148.ca582082.chunk.js": "/track-your-study/static/js/148.ca582082.chunk.js",
+    "static/js/891.f2a3e245.chunk.js": "/track-your-study/static/js/891.f2a3e245.chunk.js",
     "static/js/567.6cab5bcb.chunk.js": "/track-your-study/static/js/567.6cab5bcb.chunk.js",
     "static/js/197.8be557cb.chunk.js": "/track-your-study/static/js/197.8be557cb.chunk.js",
     "static/js/732.7402a394.chunk.js": "/track-your-study/static/js/732.7402a394.chunk.js",
@@ -14,12 +17,15 @@
     "static/js/912.2e85bb71.chunk.js": "/track-your-study/static/js/912.2e85bb71.chunk.js",
     "static/js/841.37b50410.chunk.js": "/track-your-study/static/js/841.37b50410.chunk.js",
     "index.html": "/track-your-study/index.html",
-    "main.ed1c2e5c.css.map": "/track-your-study/static/css/main.ed1c2e5c.css.map",
-    "main.6b99c7a6.js.map": "/track-your-study/static/js/main.6b99c7a6.js.map",
-    "993.4f4d87b1.chunk.js.map": "/track-your-study/static/js/993.4f4d87b1.chunk.js.map",
+    "main.e00ba576.css.map": "/track-your-study/static/css/main.e00ba576.css.map",
+    "main.b0fe0463.js.map": "/track-your-study/static/js/main.b0fe0463.js.map",
+    "722.84c104ea.chunk.js.map": "/track-your-study/static/js/722.84c104ea.chunk.js.map",
+    "205.69d9c173.chunk.js.map": "/track-your-study/static/js/205.69d9c173.chunk.js.map",
+    "209.9cc5a013.chunk.js.map": "/track-your-study/static/js/209.9cc5a013.chunk.js.map",
+    "993.6a4e676c.chunk.js.map": "/track-your-study/static/js/993.6a4e676c.chunk.js.map",
     "948.ccd2d8c1.chunk.js.map": "/track-your-study/static/js/948.ccd2d8c1.chunk.js.map",
     "531.245e4100.chunk.js.map": "/track-your-study/static/js/531.245e4100.chunk.js.map",
-    "148.ca582082.chunk.js.map": "/track-your-study/static/js/148.ca582082.chunk.js.map",
+    "891.f2a3e245.chunk.js.map": "/track-your-study/static/js/891.f2a3e245.chunk.js.map",
     "567.6cab5bcb.chunk.js.map": "/track-your-study/static/js/567.6cab5bcb.chunk.js.map",
     "197.8be557cb.chunk.js.map": "/track-your-study/static/js/197.8be557cb.chunk.js.map",
     "732.7402a394.chunk.js.map": "/track-your-study/static/js/732.7402a394.chunk.js.map",
@@ -29,7 +35,7 @@
     "841.37b50410.chunk.js.map": "/track-your-study/static/js/841.37b50410.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ed1c2e5c.css",
-    "static/js/main.6b99c7a6.js"
+    "static/css/main.e00ba576.css",
+    "static/js/main.b0fe0463.js"
   ]
 }
