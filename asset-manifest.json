@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/track-your-study/static/css/main.265be8bb.css",
-    "main.js": "/track-your-study/static/js/main.e50a90d4.js",
+    "main.js": "/track-your-study/static/js/main.0388c67a.js",
     "static/js/715.f201246d.chunk.js": "/track-your-study/static/js/715.f201246d.chunk.js",
     "static/js/722.62ab6320.chunk.js": "/track-your-study/static/js/722.62ab6320.chunk.js",
     "static/js/205.69d9c173.chunk.js": "/track-your-study/static/js/205.69d9c173.chunk.js",
@@ -25,7 +25,7 @@
     "static/js/841.37b50410.chunk.js": "/track-your-study/static/js/841.37b50410.chunk.js",
     "index.html": "/track-your-study/index.html",
     "main.265be8bb.css.map": "/track-your-study/static/css/main.265be8bb.css.map",
-    "main.e50a90d4.js.map": "/track-your-study/static/js/main.e50a90d4.js.map",
+    "main.0388c67a.js.map": "/track-your-study/static/js/main.0388c67a.js.map",
     "715.f201246d.chunk.js.map": "/track-your-study/static/js/715.f201246d.chunk.js.map",
     "722.62ab6320.chunk.js.map": "/track-your-study/static/js/722.62ab6320.chunk.js.map",
     "205.69d9c173.chunk.js.map": "/track-your-study/static/js/205.69d9c173.chunk.js.map",
@@ -50,6 +50,6 @@
   },
   "entrypoints": [
     "static/css/main.265be8bb.css",
-    "static/js/main.e50a90d4.js"
+    "static/js/main.0388c67a.js"
   ]
 }
